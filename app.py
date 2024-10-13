@@ -29,6 +29,10 @@ def main(page: ft.Page):
     page.title = "Flet Questions"
     page.vertical_alignment = "center"
     page.horizontal_alignment = "center"
+    page.window.width = 400
+    page.window.height = 500
+    page.window.resizable = False
+    page.window.maximizable = False
     page.theme_mode = "dark"
 
     result = fetch_data()
